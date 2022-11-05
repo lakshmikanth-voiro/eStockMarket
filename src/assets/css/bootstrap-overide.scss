@@ -1,0 +1,31 @@
+@import 'voiro-color';
+
+@media (min-width: 1600px) {
+    .container-fluid {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1856px) {
+    .container-fluid {
+        max-width: 1640px;
+    }
+}
+
+.container-fluid {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: $primary-blue;
+    border-color: $primary-blue;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: unset !important;
+}

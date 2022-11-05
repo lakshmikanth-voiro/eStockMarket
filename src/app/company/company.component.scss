@@ -1,0 +1,30 @@
+.company {
+    font-family: arial, sans-serif;
+
+    .example-form {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .example-full-width {
+        width: 100%;
+    }
+
+    .example-spacer {
+        flex: 1 1 auto;
+    }
+
+    table {
+
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+}
