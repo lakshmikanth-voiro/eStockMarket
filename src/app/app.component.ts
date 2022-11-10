@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { setTheme } from 'ngx-bootstrap/utils';
+import { ApiServiceService } from './service/api-service.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,16 @@ import { setTheme } from 'ngx-bootstrap/utils';
 })
 export class AppComponent {
   title = 'estockmarket';
-  constructor(){
+  companies: any = [];
+  constructor(private api: ApiServiceService){
     setTheme('bs4');
+    this.getCompanyDetails();
+  }
+
+  getCompanyDetails(){
+    const requestUrl = 'info/all';
+    this.api.getBaseURL(requestUrl).subscribe((result)=>{
+      this.companies = result;
+    })
   }
 }

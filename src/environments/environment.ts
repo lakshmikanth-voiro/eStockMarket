@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  host: '',
+  host: 'https://estock-market-info-reader.azurewebsites.net/',
   // https://estock-market-info-reader.azurewebsites.net/
 };
 

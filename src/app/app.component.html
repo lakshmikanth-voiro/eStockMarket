@@ -1,2 +1,5 @@
 <app-header></app-header>
-<app-company></app-company>
+<div *ngIf="companies.length==0" style="margin-top: 20%;" class="d-flex justify-content-center align-items-center">
+    <mat-spinner mode="indeterminate" [diameter]="70"></mat-spinner>
+</div>
+<app-company *ngIf="companies.length>0" [companies]="companies"></app-company>

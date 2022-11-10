@@ -52,3 +52,8 @@
         background-color: rgba(2, 117, 216, 0.5);
     }
 }
+
+::ng-deep .mat-menu-content {
+    width: 200px !important; 
+    height: 300px !important; 
+  }
